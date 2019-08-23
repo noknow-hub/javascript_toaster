@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../toaster.css">
+    <script src="../toaster.js"></script>
+    <script src="index.js"></script>
+    <style>
+      .container {
+          bottom: 0;
+          height: 50%;
+          position: absolute;
+          width: 100%;
+      }
+      .container .item {
+          align-items: center;
+          display: flex;
+      }
+      .container .item > p {
+          margin-right: 1.0em;
+      }
+      .container > button {
+          box-sizing: border-box;
+          margin: 3.0em 0;
+          padding: 1.0em;
+      }
+    </style>
+  </head>
+  </body>
+    <h1>Demo</h1>
+    <form class="container" name="form">
+      <div class="item">
+        <p>Toast Type</p>
+        <select name="type">
+          <option value="top-full-width-drop-down">top-full-width-drop-down</option>
+          <option value="top-center-drop-down">top-center-drop-down</option>
+          <option value="bottom-full-width-drop-up">bottom-full-width-drop-up</option>
+          <option value="bottom-center-drop-up">bottom-center-drop-up</option>
+        </select>
+      </div>
+      
+      <button type="button" name="errorBtn">Show Error Toast</button>
+      <button type="button" name="warningBtn">Show Warning Toast</button>
+      <button type="button" name="successBtn">Show Success Toast</button>
+    </form>
+  </body>
+</html>
